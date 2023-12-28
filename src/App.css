@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.buttons {
+  height: 8vh;
+  padding-top: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons .btn {
+  margin-right: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.canvas {
+  background-color: white;
+  width: 50vw;
+  height: 80vh;
+  border: 2px black solid;
+  overflow: 'auto';
+  position: 'relative';
+  padding: '0';
+  margin-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.editing {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 10px 1px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.editor-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 1px;
+  grid-template-areas:
+    "."
+    ".";
+  margin-bottom: 2rem;
+}
+
+.bottom {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs{
+  font-size: 1.3rem;
+}
+
+.inputs input{
+  
+}
+
+.btn-container{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding: 8px 14px 8px 14px;
+  min-width: 100px;
+  border: 0px;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+  border-radius: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+  background: #3498db;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+  color: #ffffff;
+}
+
+.btn-green {
+  background: #2ecc71;
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background: #27ae60;
+  color: #ffffff;
+}
+
+.btn-top {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background: #27ae60;
+  color: #ffffff;
 }
